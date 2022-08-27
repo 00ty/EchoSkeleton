@@ -1,0 +1,17 @@
+# T_DataWorkman 批量数据库导入导出管理系统
+#	作者: wuju
+#	开发时间: 2022/4/18
+#	联系方式: github.com/00ty/wuju 提issues即可
+
+# 网站端口 int
+web_port: 8080
+# 数据库地址
+host: 127.0.0.1
+# 数据库端口
+port: 3306
+# 数据库账号
+username: root
+# 数据库密码
+password: root
+# 数据库名称
+dbname: hsyy
