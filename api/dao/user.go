@@ -2,6 +2,7 @@ package dao
 
 import (
 	"EchoSkeleton/models"
+	"EchoSkeleton/utils"
 
 	"gorm.io/gorm"
 )
@@ -11,7 +12,7 @@ type UserDao struct {
 }
 
 func NewUserDao() *UserDao {
-	return &UserDao{db: models.Db}
+	return &UserDao{db: utils.Db}
 }
 
 func (dao *UserDao) Find(uid int64) (*models.User, error) {

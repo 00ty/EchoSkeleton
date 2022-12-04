@@ -2,7 +2,6 @@ package main
 
 import (
 	"EchoSkeleton/api/routes"
-	"EchoSkeleton/models"
 	"fmt"
 
 	"EchoSkeleton/utils"
@@ -19,7 +18,7 @@ func main() {
 	log.SetHeader(defaultLog)
 	// 载入配置
 	utils.GetConfig()
-	models.InitDb()
+	utils.InitDb()
 	e := echo.New()
 	routes.Run(e)
 	fmt.Println("web is http://127.0.0.1:" + utils.Config.WebPort)
